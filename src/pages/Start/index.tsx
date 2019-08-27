@@ -17,6 +17,13 @@ const Start = (props: StartPageProps): JSX.Element => {
           localStorage.setItem('token', res.data.data.token);
           localStorage.setItem('user_id', res.data.data.user_id);
           setCurrentGameSequence(res.data.data.user_id);
+
+          http
+            .get('/api/start', {
+              headers: {
+                Authorization: res.data.data.token
+              }
+            });
         }
       });
   }, []);
