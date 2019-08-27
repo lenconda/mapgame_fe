@@ -1,0 +1,105 @@
+.logo-house {
+  position: absolute;
+  top: -9.8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 259px;
+  height: 207px;
+}
+
+.content-card.rank {
+  padding: 0 !important;
+  position: relative;
+}
+
+.rank-result {
+  height: 48.667%;
+  width: 100%;
+  padding-bottom: 12px;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: absolute;
+  top: 163.2px;
+
+  & > .brief-container {
+    font-size: 28px;
+    color: #707070;
+    font-family: 'source_medium';
+    padding: 0 25px;
+    width: 100%;
+    box-sizing: border-box;
+
+    &:first-child {
+      margin-bottom: 51px;
+    }
+
+    &.player {
+      font-size: 24px;
+      margin-bottom: 12px;
+
+      & > .brief-player-number {
+        color: #fd796b;
+      }
+    }
+
+    &.grade {
+      margin-bottom: 21px;
+
+      & > .brief-title {
+        margin-bottom: 9px;
+      }
+
+      & > .brief-content {
+        font-size: 45px;
+        line-height: 45px;
+        text-align: center;
+
+        & > .brief-grade-number {
+          font-size: 70px;
+          line-height: 84px;
+          color: #fd796b;
+          display: inline-block;
+          margin-right: 18px;
+          font-family: 'tensent';
+        }
+      }
+    }
+
+    &.rank {
+      & > .brief-title {
+        margin-bottom: 15px;
+      }
+  
+      & > .brief-content {
+        font-size: 28px;
+        line-height: 28px;
+        text-align: center;
+  
+        & > .brief-grade-number {
+          font-size: 50px;
+          line-height: 60px;
+          color: #fd796b;
+          display: inline-block;
+          margin-right: 15px;
+          font-family: 'tensent';
+        }
+      }
+    }
+  }
+}
+
+.again-game-button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10.467%;
+}
+
+.logo-text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 15px;
+  width: 221px;
+}
