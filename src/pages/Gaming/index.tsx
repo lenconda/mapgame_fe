@@ -48,7 +48,7 @@ const Gaming = (props: GamingPageProps): JSX.Element => {
       .then(res => {
         if (res) {
           setGameCurrentScore(res.data.data.record.score);
-          localStorage.setItem('percent', res.data.data.record.percent || 0);
+          localStorage.setItem('percent', res.data.data.percent || 0);
 
           if (res.data.data.result) {
             setCurrentQuestionAnswer(res.data.data.result.correct_answer);
