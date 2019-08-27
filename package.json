@@ -6,7 +6,8 @@
   "scripts": {
     "test": "exit 0",
     "start": "cross-env NODE_ENV=development webpack-dev-server --config config/webpack.config.js --mode development",
-    "build": "cross-env NODE_ENV=production webpack --config config/webpack.config.js --mode production"
+    "build": "cross-env NODE_ENV=production webpack --config config/webpack.config.js --mode production",
+    "deploy": "node ./deploy.js pro"
   },
   "repository": {
     "type": "git",
@@ -61,12 +62,13 @@
     "typescript": "3.2.4",
     "typescript-eslint-parser": "^22.0.0",
     "uglifyjs-webpack-plugin": "^2.2.0",
-    "webpack": "4.29.0",
+    "webpack": "4.28.0",
     "webpack-bundle-analyzer": "^3.4.1",
     "webpack-cli": "3.2.1",
     "webpack-dev-server": "3.1.14"
   },
   "dependencies": {
+    "ali-oss-deploy": "^1.0.4",
     "autoprefixer": "^9.6.1",
     "axios": "^0.19.0",
     "file-loader": "^4.1.0",
