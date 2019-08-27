@@ -19,9 +19,6 @@ const Start = (props: StartPageProps): JSX.Element => {
           setCurrentGameSequence(res.data.data.user_id);
         }
       });
-
-    http
-      .get('/api/start');
   }, []);
 
   return (
