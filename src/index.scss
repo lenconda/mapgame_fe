@@ -41,13 +41,14 @@
   padding-bottom: 53.2px;
   display: flex;
   align-items: flex-end;
+  background-size: cover !important;
 
   &.orange-blue {
-    background: url('/assets/img/bg_orange_blue.png') 100% / 100% no-repeat;
+    background: url('/assets/img/bg_orange_blue.png') no-repeat center center fixed;
   }
 
   &.blue-orange {
-    background: url('/assets/img/bg_blue_orange.png') 100% / 100% no-repeat;
+    background: url('/assets/img/bg_blue_orange.png') no-repeat center center fixed;
   }
 }
 
