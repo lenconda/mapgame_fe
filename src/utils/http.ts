@@ -1,6 +1,7 @@
 import axios from 'axios';
+import config from '../../config/env.config';
 
-// axios.defaults.baseURL = 'https://map.exql.top';
+axios.defaults.baseURL = config.isProduction ? 'https://map.exql.top' : '';
 axios.defaults.timeout = 3600000;
 axios.interceptors.request.use(config => {
   config.headers = {
