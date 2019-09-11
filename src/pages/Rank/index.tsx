@@ -33,14 +33,14 @@ const Rank = (props: RankPageProps): JSX.Element => {
           <div className="brief-container grade">
             <p className="brief-title">您的得分是：</p>
             <p className="brief-content">
-              <span className="brief-grade-number">{currentGradeScore.toFixed(1)}</span>分
+              <span className="brief-grade-number">{currentGradeScore}</span>分
             </p>
           </div>
 
           <div className="brief-container rank">
             <p className="brief-title">超过全校</p>
             <p className="brief-content">
-              <span className="brief-grade-number">{localStorage.getItem('percent')}%</span>的人
+              <span className="brief-grade-number">{Number(localStorage.getItem('percent')).toFixed(1)}%</span>的人
             </p>
           </div>
         </section>
