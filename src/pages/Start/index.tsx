@@ -34,10 +34,8 @@ const Start = (props: StartPageProps): JSX.Element => {
       <div className="content-card">
         <img className="logo-house" src="/assets/img/logo.png" alt="House" />
         <p className="brief">
-          你是第<span className="rank">{currentGameSequence}</span>号玩家
-        </p>
-        <p className="brief subtitle">
-          快开始游戏吧～
+          你是第<span className="rank">{currentGameSequence}</span>号玩家<br />
+          <p style={{ marginTop: 15 }}>快开始游戏吧～ </p>
         </p>
         <Button
           className="start-game-button"
